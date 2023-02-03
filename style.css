@@ -9,7 +9,6 @@
 #container {
 
     width: 100%;
-    min-width: 520px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,10 +17,22 @@
 
 
 #frame {
+    width: 600px;
+    min-width: 600px;
+    height: 800px;
+    min-height: 800px;
+    background-color: rgb(53, 16, 1);
+    border-radius: 100px 10px 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#analog {
     position: relative;
     width: 500px;
     height: 500px;
-    border: 3px solid rgb(70, 2, 2);
     border-radius: 50%;
 }
 
@@ -30,7 +41,7 @@
     z-index: 9;
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: rgb(59, 6, 6);
     border-radius: 50%;
     translate: 240px 240px;
 }
@@ -49,7 +60,7 @@
     height: 50%;
     border-radius: 50% 50% 1px 1px;
     top: 55px;
-    background-color: rgb(2, 44, 18);
+    background-color: rgb(6, 70, 31);
 
 }
 
@@ -87,7 +98,7 @@
     height: 60%;
     top: 25px;
     /* border: 1px solid rgb(117, 13, 13); */
-    background-color: rgb(112, 49, 7);
+    background-color: rgb(240, 236, 6);
 
 }
 
@@ -95,7 +106,6 @@
     top: 0;
     width: 4px;
     height: 100%;
-  /* background-color: rgb(192, 77, 62); */
     position: absolute;    
     translate: 249px;
     display: flex;
@@ -107,12 +117,37 @@
     top: 0;
     width: 3px;
     height: 5%;
-  background-color: rgb(4, 66, 2);
+  background-color: rgb(47, 143, 84);
 }
 
 .short-line {
     top: 0;
     width: 2px;
     height: 3%;
-  background-color: rgb(170, 206, 9);
+  background-color: rgb(106, 147, 201);
 }
+
+
+
+
+
+#digital {
+    width: 500px;
+    height: 200px;
+    /* border: 1px solid yellow; */
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#digital * {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding: 5px;
+ 
+}
+
